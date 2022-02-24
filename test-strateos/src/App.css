@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #041e75, #8a1053);
+  background: linear-gradient(135deg, #2e4aa7, #8a1053);
 }
 
 .container {
@@ -24,13 +24,13 @@ body {
   border-radius: 5px;
 }
 
-.container .title {
+ .title {
   font-size: 25px;
   font-weight: 500;
   position: relative;
 }
 
-.container .title::before {
+.title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -38,7 +38,7 @@ body {
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #041e75, #8a1053);
+  background: linear-gradient(135deg, #303955, #8a1053);
 }
 
 .container form .user-details {
@@ -47,41 +47,30 @@ body {
   justify-content: space-between;
   margin: 20px 0 12px 0;
 }
-
-form .user-details .input-box {
-  margin-bottom: 15px;
-  width: calc(100% / 2 -20px);
-}
-form .input-box .details {
-  display: block;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
 .details {
-  
+  display: table;
+  font-weight: 500;
+  margin: 5px;
+  text-align: center;
   margin-right: 20px;
 }
-.user-details .input-box input {
+
+.user-details {
   height: 45px;
   width: 100%;
   outline: none;
   border-radius: 5px;
   font-size: 16px;
-  border: 1px solid #ccc;
   padding-left: 15px;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
-
-
-form .button {
-  height: 45px;
-  margin: 35px 0;
-  justify-content: space-around;
+input {
+  margin-left: 5px;
+  border-radius: 0;
 }
 .button {
-  margin: 5px;
+  margin: 5px 0;
   height: 100%;
   width: 100%;
   border-radius: 5px;
@@ -105,29 +94,14 @@ button:hover {
   }
 }
 
-form .user-details .input-box {
-  margin-bottom: 15px;
-  width: 100%;
-}
-
 .card {
-  
+  padding: 5px;
   height: 100%;
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  
+  border: 2px solid rgb(153, 153, 153);
 }
-.subtitle {
-  text-decoration: linear-gradient(135deg, #041e75, #8a1053);
+.scroll-card {
+  overflow-y: scroll;
+  max-height: 500px;
 }
-/* .container .subtitle::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 30px;
-  border-radius: 5px;
-  background: linear-gradient(135deg, #041e75, #8a1053);
-} */

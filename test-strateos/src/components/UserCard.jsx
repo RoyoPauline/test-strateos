@@ -9,16 +9,17 @@ const UserCard = ({ firstname, lastname, phone, createdAt }) => {
     <>
       {isVisible && (
         <div className="container">
-          <button className="button" onClick={() => setIsVisible(false)}>
-            {" "}
-            Supprimer
-          </button>
+          
           <div className="card">
             <p className="subtitle">Prénom : {firstname} </p>
             <p className="subtitle">Nom de famille : {lastname} </p>
             <p className="subtitle">Numéro de téléphone : {phone} </p>
             <p className="subtitle">Contact créé le : {createdAt} </p>
           </div>
+          <button className="button" onClick={() => setIsVisible(false)}>
+            {" "}
+            Supprimer
+          </button>
         </div>
       )}
     </>

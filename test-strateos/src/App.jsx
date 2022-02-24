@@ -34,21 +34,21 @@ export default function App() {
     <div className="container">
       <div>
         <h1 className="title">Liste de vos contacts</h1>
-        <p>Ajoutez un contact pour ne pas l'oublier</p>
+        <p className="other-title">Ajoutez un contact pour ne pas l'oublier</p>
         <form>
           <div className="user-details">
-            <span ClassName="details"> Nom de famille</span>
+            <span className="details"> Nom de famille</span>
             <input
-              placeholder="Entrez votre nom de famille"
+              placeholder=" Entrez votre nom de famille"
               type="text"
               value={user.lastname}
               onChange={(e) => setUser({ ...user, lastname: e.target.value })}
             ></input>
           </div>
           <div className="user-details">
-            <span ClassName="details">Prénom</span>
+            <span className="details">Prénom</span>
             <input
-              placeholder="Entrez votre prénom"
+              placeholder=" Entrez votre prénom"
               type="text"
               value={user.firstname}
               onChange={(e) => setUser({ ...user, firstname: e.target.value })}
@@ -57,8 +57,8 @@ export default function App() {
           <div className="user-details">
             <span className="details">Numéro de téléphone</span>
             <input
-              placeholder="Entrez votre numéro de téléphone"
-              type="text"
+              placeholder=" Entrez votre numéro de téléphone"
+              type="tel"
               value={user.phone}
               onChange={(e) => setUser({ ...user, phone: e.target.value })}
             ></input>
@@ -86,7 +86,7 @@ export default function App() {
         </button>
       </div>
 
-      <div>
+      <div className="scroll-card">
         {userList.map((user) => {
           return (
             <UserCard
